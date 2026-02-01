@@ -68,9 +68,9 @@ class Lang
         }
 
         $translations = [];
-        $coreDir = __DIR__ . '/languages/' . $language;
-        if (is_dir($coreDir)) {
-            $translations = array_merge($translations, self::loadFromDir($coreDir));
+        $coreFile = __DIR__ . '/languages/' . $language . '.ini';
+        if (is_file($coreFile)) {
+            $translations = array_merge($translations, self::loadFromFile($coreFile));
         }
 
         $extRoot = __DIR__ . '/../extension';
@@ -124,20 +124,17 @@ class Lang
         return $translations;
     }
 
-    private static function loadFromDir(string $dir): array
+    private static function loadFromFile(string $file): array
     {
         $translations = [];
-        $files = glob($dir . '/*.ini') ?: [];
-        foreach ($files as $file) {
-            $data = @parse_ini_file($file, false, INI_SCANNER_RAW);
-            if ($data === false) {
-                Logger::error('error', 'Language file unreadable', ['file' => $file]);
-                continue;
-            }
-            foreach ($data as $key => $value) {
-                $key = strtoupper((string)$key);
-                $translations[$key] = (string)$value;
-            }
+        $data = @parse_ini_file($file, false, INI_SCANNER_RAW);
+        if ($data === false) {
+            Logger::error('error', 'Language file unreadable', ['file' => $file]);
+            return $translations;
+        }
+        foreach ($data as $key => $value) {
+            $key = strtoupper((string)$key);
+            $translations[$key] = (string)$value;
         }
         return $translations;
     }

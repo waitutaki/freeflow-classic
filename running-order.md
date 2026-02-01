@@ -1596,15 +1596,11 @@ Keys MUST be uppercase.
 3.1 Core Languages
 
 Core language files MUST live in:
-core/languages/{lang_tag}/
+core/languages/{lang_tag}.ini
 
 Example:
-core/languages/en-GB/
-core/languages/fr-FR/
-
-Files may include:
-core/languages/en-GB/language_en-GB.ini
-core/languages/fr-FR/language_fr-FR.ini
+core/languages/en-GB.ini
+core/languages/fr-FR.ini
 
 ---
 
@@ -8093,7 +8089,7 @@ view |
 | `core/Application.php` | Modified | Routes added for admin, site, and API |
 | `core/MenuRegistry.php` | Modified | Menu entry added |
 | `core/PermissionsRegistry.php` | Modified | 7 Devstore permissions added |
-| `core/languages/en-GB/language_en-GB.ini` | Modified | 90+ Devstore language 
+| `core/languages/en-GB.ini` | Modified | 90+ Devstore language 
 keys added |
 | `core/keys/freeflow_private.pem` | Created | RSA 4096 private signing key |
 | `core/keys/freeflow_public.pem` | Created | RSA 4096 public key |

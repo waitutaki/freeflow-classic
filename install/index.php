@@ -5,10 +5,10 @@ declare(strict_types=1);
 $rootDir = dirname(__DIR__);
 $configPath = $rootDir . '/core/admin/config/config.php';
 
-$availableLangs = ['en-GB', 'de-DE', 'fr-FR', 'es-ES', 'it-IT'];
+$availableLangs = ['en-GB'];
 $langTag = resolveLangTag($availableLangs);
-$translations = loadTranslations($rootDir . '/core/languages/' . $langTag . '/install.ini');
-$fallbackTranslations = loadTranslations($rootDir . '/core/languages/en-GB/install.ini');
+$translations = loadTranslations($rootDir . '/install/languages/en-GB.ini');
+$fallbackTranslations = loadTranslations($rootDir . '/install/languages/en-GB.ini');
 
 if (is_file($configPath)) {
     renderPage(
