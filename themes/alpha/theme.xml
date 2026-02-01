@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <meta>
+    <key>alpha</key>
+    <name>Alpha</name>
+    <context>site</context>
+    <description>Core site theme.</description>
+    <author>Core</author>
+    <version>1.0</version>
+  </meta>
+  <regions>
+    <region key="site_identity" label="Site Identity" help="Site title, tagline, and logo settings.">
+      <token key="alpha-site-title" label="Site Title" type="text" default="My Site" help="The title of your site." />
+      <token key="alpha-site-tagline" label="Tagline" type="text" default="Just another site" help="A short description of your site." />
+      <token key="alpha-logo-url" label="Logo URL" type="text" default="" help="URL of the site logo image." />
+      <token key="alpha-title-color" label="Title Color" type="color" format="hex" default="#000000" help="Color of the site title." />
+      <token key="alpha-tagline-color" label="Tagline Color" type="color" format="hex" default="#666666" help="Color of the site tagline." />
+    </region>
+    <region key="colors" label="Colors" help="Global color scheme settings.">
+      <token key="alpha-primary-color" label="Primary Color" type="color" format="hex" default="#007bff" help="Primary brand color." />
+      <token key="alpha-secondary-color" label="Secondary Color" type="color" format="hex" default="#6c757d" help="Secondary brand color." />
+      <token key="alpha-background-color" label="Background Color" type="color" format="hex" default="#ffffff" help="Site background color." />
+      <token key="alpha-text-color" label="Text Color" type="color" format="hex" default="#212529" help="Default text color." />
+      <token key="alpha-link-color" label="Link Color" type="color" format="hex" default="#007bff" help="Default link color." />
+      <token key="alpha-link-hover-color" label="Link Hover Color" type="color" format="hex" default="#0056b3" help="Link color on hover." />
+    </region>
+    <region key="typography" label="Typography" help="Font and text styling options.">
+      <token key="alpha-font-family" label="Font Family" type="select" default="Arial, sans-serif" help="Primary font family.">
+        <option value="Arial, sans-serif" label="Arial" />
+        <option value="Helvetica, sans-serif" label="Helvetica" />
+        <option value="Georgia, serif" label="Georgia" />
+        <option value="Times New Roman, serif" label="Times New Roman" />
+        <option value="Verdana, sans-serif" label="Verdana" />
+        <option value="system-ui, sans-serif" label="System UI" />
+      </token>
+      <token key="alpha-font-size-base" label="Base Font Size" type="range" min="12" max="24" step="1" default="16" help="Base font size in pixels." />
+      <token key="alpha-line-height" label="Line Height" type="range" min="1.0" max="2.0" step="0.1" default="1.5" help="Default line height." />
+      <token key="alpha-heading-color" label="Heading Color" type="color" format="hex" default="#000000" help="Color for headings." />
+      <token key="alpha-heading-font-weight" label="Heading Font Weight" type="select" default="bold" help="Font weight for headings.">
+        <option value="normal" label="Normal" />
+        <option value="bold" label="Bold" />
+        <option value="lighter" label="Lighter" />
+        <option value="bolder" label="Bolder" />
+      </token>
+    </region>
+    <region key="header" label="Header" help="Header band styling.">
+      <token key="alpha-header-bg" label="Header background" type="color" format="hex" default="#99ffff" help="Background color for the header band." />
+      <token key="alpha-header-text-color" label="Header Text Color" type="color" format="hex" default="#000000" help="Text color in the header." />
+      <token key="alpha-header-padding" label="Header Padding" type="text" default="20px" help="Padding inside the header." />
+      <token key="alpha-header-height" label="Header Height" type="text" default="auto" help="Height of the header." />
+    </region>
+    <region key="main" label="Main" help="Main content area styling.">
+      <token key="alpha-main-bg" label="Main background" type="color" format="hex" default="#ffffff" help="Background color for the main content area." />
+      <token key="alpha-body-text" label="Body text" type="color" format="hex" default="#1a1a1a" help="Default text color for site content." />
+      <token key="alpha-content-width" label="Content Width" type="text" default="1200px" help="Maximum width of the content area." />
+      <token key="alpha-content-padding" label="Content Padding" type="text" default="20px" help="Padding around the content." />
+    </region>
+    <region key="footer" label="Footer" help="Footer band styling.">
+      <token key="alpha-footer-bg" label="Footer background" type="color" format="hex" default="#99ffff" help="Background color for the footer band." />
+      <token key="alpha-footer-text-color" label="Footer Text Color" type="color" format="hex" default="#000000" help="Text color in the footer." />
+      <token key="alpha-footer-padding" label="Footer Padding" type="text" default="20px" help="Padding inside the footer." />
+    </region>
+    <region key="panels" label="Panels" help="Content panels and sidebars.">
+      <token key="alpha-panel-bg" label="Panel background" type="color" format="hex" default="#faffed" help="Background color for panels." />
+      <token key="alpha-panel-border-color" label="Panel Border Color" type="color" format="hex" default="#dee2e6" help="Border color for panels." />
+      <token key="alpha-panel-radius" label="Panel radius" type="range" min="0" max="20" step="1" default="6" help="Border radius for panels in pixels." />
+      <token key="alpha-panel-padding" label="Panel padding" type="range" min="0" max="50" step="5" default="20" help="Padding inside panels in pixels." />
+      <token key="alpha-panel-shadow" label="Panel Shadow" type="select" default="none" help="Box shadow for panels.">
+        <option value="none" label="None" />
+        <option value="0 2px 4px rgba(0,0,0,0.1)" label="Small" />
+        <option value="0 4px 8px rgba(0,0,0,0.1)" label="Medium" />
+        <option value="0 8px 16px rgba(0,0,0,0.15)" label="Large" />
+      </token>
+    </region>
+    <region key="menu" label="Menu" help="Primary menu link colors.">
+      <token key="alpha-menu-link" label="Menu link" type="color" format="hex" default="#0b3a3a" help="Link color for the menu." />
+      <token key="alpha-menu-link-hover" label="Menu link hover" type="color" format="hex" default="#075050" help="Hover color for menu links." />
+      <token key="alpha-menu-bg" label="Menu Background" type="color" format="hex" default="transparent" help="Background color for the menu." />
+      <token key="alpha-menu-font-size" label="Menu Font Size" type="range" min="12" max="24" step="1" default="16" help="Font size for menu items." />
+      <token key="alpha-menu-padding" label="Menu Item Padding" type="text" default="10px 15px" help="Padding for menu items." />
+    </region>
+    <region key="buttons" label="Buttons" help="Button styling options.">
+      <token key="alpha-btn-primary-bg" label="Primary Button Background" type="color" format="hex" default="#007bff" help="Background color for primary buttons." />
+      <token key="alpha-btn-primary-color" label="Primary Button Text" type="color" format="hex" default="#ffffff" help="Text color for primary buttons." />
+      <token key="alpha-btn-secondary-bg" label="Secondary Button Background" type="color" format="hex" default="#6c757d" help="Background color for secondary buttons." />
+      <token key="alpha-btn-secondary-color" label="Secondary Button Text" type="color" format="hex" default="#ffffff" help="Text color for secondary buttons." />
+      <token key="alpha-btn-radius" label="Button Border Radius" type="range" min="0" max="20" step="1" default="4" help="Border radius for buttons." />
+      <token key="alpha-btn-padding" label="Button Padding" type="text" default="8px 16px" help="Padding inside buttons." />
+    </region>
+    <region key="sidebar_left" label="Left Sidebar" help="Left sidebar styling.">
+      <token key="alpha-sidebar-left-bg" label="Background Color" type="color" format="hex" default="#f8f9fa" help="Background color for the left sidebar." />
+      <token key="alpha-sidebar-left-text" label="Text Color" type="color" format="hex" default="#212529" help="Text color in the left sidebar." />
+      <token key="alpha-sidebar-left-padding" label="Padding" type="text" default="20px" help="Padding inside the left sidebar." />
+    </region>
+    <region key="sidebar_right" label="Right Sidebar" help="Right sidebar styling.">
+      <token key="alpha-sidebar-right-bg" label="Background Color" type="color" format="hex" default="#f8f9fa" help="Background color for the right sidebar." />
+      <token key="alpha-sidebar-right-text" label="Text Color" type="color" format="hex" default="#212529" help="Text color in the right sidebar." />
+      <token key="alpha-sidebar-right-padding" label="Padding" type="text" default="20px" help="Padding inside the right sidebar." />
+    </region>
+    <region key="layout" label="Layout" help="Overall layout settings.">
+      <token key="alpha-container-max-width" label="Container Max Width" type="text" default="1200px" help="Maximum width of the main container." />
+      <token key="alpha-sidebar-width" label="Sidebar Width" type="text" default="300px" help="Width of sidebars." />
+      <token key="alpha-gutter-width" label="Gutter Width" type="range" min="10" max="50" step="5" default="30" help="Space between columns." />
+    </region>
+  </regions>
+  <positions>
+    <position key="topbar" />
+    <position key="header_left" />
+    <position key="header_right" />
+    <position key="menu" />
+    <position key="below_menu" />
+    <position key="above_content" />
+    <position key="sidebar_left" />
+    <position key="sidebar_right" />
+    <position key="below_content" />
+    <position key="above_footer_1" />
+    <position key="above_footer_2" />
+    <position key="above_footer_3" />
+    <position key="above_footer_4" />
+    <position key="footer_1" />
+    <position key="footer_2" />
+    <position key="footer_3" />
+    <position key="footer_4" />
+    <position key="below_footer" />
+    <position key="copyright" />
+  </positions>
+</theme>

@@ -1,0 +1,13 @@
+RewriteEngine On
+
+DirectoryIndex index.php
+
+RewriteRule ^login$ index.php [L]
+RewriteRule ^docs(?:/.*)?$ index.php [L]
+RewriteRule ^docs-html(?:/.*)?$ index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.php [L]

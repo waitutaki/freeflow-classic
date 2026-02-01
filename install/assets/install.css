@@ -1,0 +1,444 @@
+/* Installer-specific CSS */
+
+:root {
+  --ff-primary: #007bff;
+  --ff-secondary: #6c757d;
+  --ff-success: #28a745;
+  --ff-danger: #dc3545;
+  --ff-warning: #ffc107;
+  --ff-info: #17a2b8;
+  --ff-light: #f8f9fa;
+  --ff-dark: #343a40;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.installer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.installer-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.installer-header img {
+  max-width: 150px;
+  height: auto;
+  max-height: 100px;
+}
+
+.installer-header h1 {
+  font-size: 2.5rem;
+  color: var(--ff-primary);
+  margin-top: 15px;
+}
+
+.installer-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.installer-card h2 {
+  color: var(--ff-primary);
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--ff-primary);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.installer-card h2 i {
+  margin-right: 10px;
+}
+
+.installer-card .card-content {
+  padding: 20px 0;
+}
+
+.installer-card .form-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.installer-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.installer-summary h3 {
+  color: var(--ff-primary);
+  margin-top: 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.installer-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.installer-summary li {
+  padding: 5px 0;
+}
+
+.installer-card h2 {
+  color: var(--ff-primary);
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.progress-container {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: var(--ff-light);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--ff-primary);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--ff-secondary);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: var(--ff-primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--ff-primary);
+  border-color: var(--ff-primary);
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: var(--ff-secondary);
+  border-color: var(--ff-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: var(--ff-success);
+  border-color: var(--ff-success);
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: var(--ff-danger);
+  border-color: var(--ff-danger);
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.requirements-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requirements-list li:last-child {
+  border-bottom: none;
+}
+
+.requirements-list li i {
+  font-size: 1.2rem;
+}
+
+.requirements-list li.success i {
+  color: var(--ff-success);
+}
+
+.requirements-list li.failure i {
+  color: var(--ff-danger);
+}
+
+.installer-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: var(--ff-secondary);
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 120px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--ff-light);
+  color: var(--ff-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step.active .step-number {
+  background-color: var(--ff-primary);
+  color: white;
+}
+
+.step.completed .step-number {
+  background-color: var(--ff-success);
+  color: white;
+}
+
+.step-title {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ff-secondary);
+}
+
+.step.active .step-title {
+  color: var(--ff-primary);
+  font-weight: 600;
+}
+
+.step.completed .step-title {
+  color: var(--ff-success);
+  font-weight: 600;
+}
+
+.step-connector {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--ff-light);
+  z-index: 0;
+}
+
+.step-connector-active {
+  background-color: var(--ff-primary);
+}
+
+.step:not(:last-child) .step-connector {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.password-strength {
+  height: 5px;
+  background-color: var(--ff-light);
+  margin-top: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.password-strength-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.password-weak {
+  background-color: var(--ff-danger);
+  width: 33%;
+}
+
+.password-medium {
+  background-color: var(--ff-warning);
+  width: 66%;
+}
+
+.password-strong {
+  background-color: var(--ff-success);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .installer-container {
+    padding: 15px;
+  }
+
+  .step-indicator {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .step {
+    width: 100px;
+    margin: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .installer-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    width: 80px;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .step-title {
+    font-size: 0.8rem;
+  }
+}

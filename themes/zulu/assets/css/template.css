@@ -1,0 +1,298 @@
+:root {
+    --zulu-chrome-bg: #040358;
+    --zulu-chrome-text: #ffffff;
+    --zulu-workspace-bg: #f5f5f5;
+    --zulu-body-text: #1a1a1a;
+    --zulu-panel-bg: #ffffff;
+    --zulu-panel-border: #e6e6e6;
+    --zulu-panel-radius: 6px;
+    --zulu-panel-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --zulu-list-border: #e6e6e6;
+    --zulu-modal-bg: #ffffff;
+    --zulu-modal-backdrop: rgba(0, 0, 0, 0.5);
+    --zulu-dashboard-card-bg: #ffffff;
+    --zulu-dashboard-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --zulu-toggle-track-bg: #ffffff;
+    --zulu-toggle-thumb-bg: var(--zulu-chrome-bg);
+}
+
+.zulu-body {
+    margin: 0;
+    background-color: var(--zulu-workspace-bg);
+    color: var(--zulu-body-text);
+}
+
+.zulu-topbar {
+    background-color: var(--zulu-chrome-bg);
+    color: var(--zulu-chrome-text);
+}
+
+.zulu-topbar-inner {
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.zulu-logo {
+    display: block;
+    height: 150px;
+    width: auto;
+}
+
+@media (max-width: 992px) {
+    .zulu-logo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .zulu-logo {
+        height: 90px;
+    }
+}
+
+.zulu-shell {
+    display: flex;
+    min-height: calc(100vh - 180px);
+}
+
+.zulu-sidebar {
+    background-color: var(--zulu-chrome-bg);
+    color: var(--zulu-chrome-text);
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    transition: width 0.2s ease;
+}
+
+.zulu-sidebar.is-collapsed {
+    width: 80px;
+}
+
+.zulu-sidebar-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.zulu-sidebar-menu {
+    flex: 1;
+}
+
+.zulu-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.zulu-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--zulu-chrome-text);
+    font-weight: 600;
+}
+
+.zulu-menu-link:hover,
+.zulu-menu-link:focus {
+    background-color: #00000000;
+    color: var(--zulu-chrome-text);
+}
+
+.zulu-menu-icon {
+    width: 20px;
+    text-align: center;
+}
+
+.zulu-sidebar.is-collapsed .zulu-menu-label {
+    display: none;
+}
+
+.zulu-sidebar.is-collapsed .zulu-menu-link {
+    justify-content: center;
+}
+
+.zulu-workspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.zulu-toolbar {
+    background-color: var(--zulu-chrome-bg);
+    color: var(--zulu-chrome-text);
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 24px;
+}
+
+.zulu-toolbar-link {
+    color: var(--zulu-chrome-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.zulu-toolbar-link:hover,
+.zulu-toolbar-link:focus {
+    background-color: #00000000;
+    color: var(--zulu-chrome-text);
+}
+
+.zulu-content {
+    padding: 24px;
+}
+
+.zulu-toolbar-row {
+    margin-bottom: 16px;
+}
+
+.zulu-panel {
+    background-color: var(--zulu-panel-bg);
+    border-radius: var(--zulu-panel-radius);
+    border: 1px solid var(--zulu-panel-border);
+    padding: 20px;
+}
+
+.zulu-login-panel {
+    max-width: 520px;
+    margin: 40px auto;
+}
+
+.zulu-form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.zulu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.zulu-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--zulu-list-border);
+    padding: 12px 0;
+}
+
+.zulu-list-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.zulu-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.zulu-modal.is-open {
+    display: flex;
+}
+
+.zulu-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: var(--zulu-modal-backdrop);
+}
+
+.zulu-modal-panel {
+    position: relative;
+    background-color: var(--zulu-modal-bg);
+    padding: 24px;
+    border-radius: var(--zulu-panel-radius);
+    width: 90%;
+    max-width: 520px;
+    z-index: 1;
+}
+
+.zulu-modal-panel-wide {
+    max-width: 900px;
+}
+
+.zulu-modal-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.zulu-log-content {
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 6px;
+    max-height: 420px;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.zulu-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .zulu-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.zulu-dashboard-card {
+    background-color: var(--zulu-dashboard-card-bg);
+    border-radius: var(--zulu-panel-radius);
+    border: 1px solid var(--zulu-panel-border);
+    padding: 20px;
+    box-shadow: var(--zulu-dashboard-shadow);
+}
+
+.zulu-dashboard-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.zulu-sidebar-toggle button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.zulu-toggle-track {
+    display: inline-flex;
+    align-items: center;
+    width: 48px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: var(--zulu-toggle-track-bg);
+    position: relative;
+}
+
+.zulu-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--zulu-toggle-thumb-bg);
+    position: absolute;
+    left: 4px;
+    transition: left 0.2s ease;
+}
+
+.zulu-sidebar.is-collapsed .zulu-toggle-thumb {
+    left: 24px;
+}

@@ -1,0 +1,9 @@
+/storage/logs/*
+/storage/tmp/*
+/storage/backups/*
+/storage/media/*
+/storage/updates/*
+/storage/devstore/uploads/*
+/storage/devstore/staging/*
+.env
+*.log

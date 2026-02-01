@@ -1,0 +1,95 @@
+# Freeflow CMS License
+
+Copyright (c) 2025 Tony
+
+Freeflow CMS is **source-available and free to use**, with conditions designed to
+protect the project from proprietary capture while encouraging widespread adoption.
+
+This license allows use on personal and commercial websites, while requiring
+attribution and preventing resale or rebranding of Freeflow CMS itself.
+
+---
+
+## You ARE allowed to
+
+You may, without payment or special permission:
+
+- Use Freeflow CMS on personal, educational, non-profit, or commercial websites.
+- Use Freeflow CMS to build websites for clients.
+- Charge for services related to installing, configuring, hosting, or maintaining websites that use Freeflow CMS.
+- Modify the source code for your own use or for client projects.
+- Share the source code or modified versions, provided this license is included.
+- Contribute changes back to the Freeflow CMS project.
+
+---
+
+## You are NOT allowed to
+
+You may NOT, without explicit written permission from the copyright holder:
+
+- Sell Freeflow CMS itself, in whole or in part.
+- Rebrand Freeflow CMS and present it as your own CMS or framework.
+- Distribute Freeflow CMS as part of a proprietary or closed-source CMS product.
+- Offer Freeflow CMS as a hosted SaaS / “CMS-as-a-Service” platform for third parties.
+- Remove or obscure required attribution (see below).
+
+---
+
+## Attribution Requirement (Mandatory)
+
+Any website using Freeflow CMS MUST retain visible attribution.
+
+This attribution MUST:
+- Credit “Freeflow CMS”
+- Link to the official Freeflow CMS website (URL to be defined)
+- Be visible on the public site (footer or equivalent is acceptable)
+
+Example (footer text is sufficient):
+> “Powered by Freeflow CMS”
+
+The attribution MUST NOT be hidden, misleading, or removed.
+
+---
+
+## Derivative Works & Modifications
+
+- Any modifications or derivative works MUST be licensed under this same license.
+- Modified versions MUST retain attribution to the original project.
+- You may add your own copyright notices, but MUST NOT remove existing ones.
+
+---
+
+## SaaS and Hosting Clarification
+
+- Running Freeflow CMS to power **your own website** (commercial or otherwise) is allowed.
+- Providing paid hosting for a website that uses Freeflow CMS is allowed.
+- Offering Freeflow CMS itself as a hosted product or service for others to create sites is NOT allowed.
+
+If in doubt, ask for clarification before deployment.
+
+---
+
+## No Warranty
+
+Freeflow CMS is provided “AS IS”, without warranty of any kind.
+The author is not liable for any damages arising from its use.
+
+---
+
+## Commercial Licensing
+
+If you wish to:
+- remove attribution,
+- offer Freeflow CMS as a SaaS,
+- or build a proprietary product based on Freeflow CMS,
+
+you must obtain a separate commercial license.
+
+Contact:
+- <your contact details here>
+
+---
+
+## Acceptance
+
+By using, modifying, or distributing Freeflow CMS, you agree to the terms of this license.
